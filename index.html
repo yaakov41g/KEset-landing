@@ -7,9 +7,29 @@
   <style>
     body {
       font-family: Arial, sans-serif;
-      text-align: center;
-      padding: 50px;
+      margin: 0;
       background-color: #f4f4f4;
+    }
+    nav {
+      background-color: #0078D7;
+      padding: 10px 0;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    nav a {
+      color: white;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .container {
+      text-align: center;
+      padding: 50px 20px;
     }
     h1 {
       color: #333;
@@ -48,47 +68,60 @@
   </style>
 </head>
 <body>
-  <h1>Welcome to KEset</h1>
-  <p>Correcting gibberish typing with a shortcut.</p>
-  <p>This extension helps you fix wrong-language typing instantly.</p>
 
-  <a class="button" href="https://microsoftedge.microsoft.com/addons/detail/keset-correcting-gibber/ddahpfaemgfcpjkcaeieidbigomonbhm" target="_blank">
-    Download from Edge Add-ons
-  </a>
+  <nav>
+    <a href="#download">Download</a>
+    <a href="#how">How it works</a>
+    <a href="#example">Example</a>
+    <a href="#video">Tutorial</a>
+    <a href="#faq">FAQ</a>
+  </nav>
 
-  <h2>What does KEset actually do?</h2>
-  <p>Ever typed something and realized your keyboard was set to the wrong language?</p>
-  <p>Instead of deleting and retyping, KEset lets you fix it instantly using a shortcut.</p>
+  <div class="container">
+    <h1>Welcome to KEset</h1>
+    <p>Correcting gibberish typing with a shortcut.</p>
+    <p>This extension helps you fix wrong-language typing instantly.</p>
 
-  <h3>Example:</h3>
-  <p>You typed: <strong>יקךךם םרךג</strong> (Hebrew letters)</p>
-  <p>But you meant: <strong>hello world</strong></p>
-  <p>KEset will convert it back correctly with one click or shortcut.</p>
+    <a id="download" class="button" href="https://microsoftedge.microsoft.com/addons/detail/keset-correcting-gibber/ddahpfaemgfcpjkcaeieidbigomonbhm" target="_blank">
+      Download from Edge Add-ons
+    </a>
 
-  <h3>Supported Languages:</h3>
-  <ul>
-    <li>🇮🇱 Hebrew</li>
-    <li>🇬🇧 English</li>
-    <li>🇷🇺 Russian</li>
-    <li>🇬🇷 Greek</li>
-    <li>🇸🇦 Arabic</li>
-  </ul>
+    <h2 id="how">What does KEset actually do?</h2>
+    <p>Ever typed something and realized your keyboard was set to the wrong language?</p>
+    <p>Instead of deleting and retyping, KEset lets you fix it instantly using a shortcut.</p>
 
-  <h3>Limitations:</h3>
-  <ul>
-    <li>Works best on standard Windows keyboards</li>
-    <li>Not tested on Mac or laptops</li>
-    <li>Doesn't fix Shift+key characters (yet)</li>
-  </ul>
+    <h3 id="example">Example:</h3>
+    <p>You typed: <strong>יקךךם םרךג</strong> (Hebrew letters)</p>
+    <p>But you meant: <strong>hello world</strong></p>
+    <p>KEset will convert it back correctly with one click or shortcut.</p>
 
-  <h2>Watch the tutorial</h2>
-  <p>See how KEset works in action:</p>
-  <iframe width="560" height="315" src="https://www.youtube.com/embed/jdMnI-fTKkc" 
-  title="KEset Tutorial" frameborder="0" allowfullscreen></iframe>
+    <h3>Supported Languages:</h3>
+    <ul>
+      <li>🇮🇱 Hebrew</li>
+      <li>🇬🇧 English</li>
+      <li>🇷🇺 Russian</li>
+      <li>🇬🇷 Greek</li>
+      <li>🇸🇦 Arabic</li>
+    </ul>
 
-  <h2>FAQ</h2>
-  <p><strong>Q:</strong> Does KEset change my system language?<br>
-  <strong>A:</strong> No. It only corrects the typed text based on keyboard layout.</p>
+    <h3>Limitations:</h3>
+    <ul>
+      <li>Works best on standard Windows keyboards</li>
+      <li>Not tested on Mac or laptops</li>
+      <li>Doesn't fix Shift+key characters (yet)</li>
+    </ul>
 
-  <p><strong>Q:</strong> Is my data sent anywhere?<br>
-  <strong>
+    <h2 id="video">Watch the tutorial</h2>
+    <p>See how KEset works in action:</p>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/jdMnI-fTKkc" 
+    title="KEset Tutorial" frameborder="0" allowfullscreen></iframe>
+
+    <h2 id="faq">FAQ</h2>
+    <p><strong>Q:</strong> Does KEset change my system language?<br>
+    <strong>A:</strong> No. It only corrects the typed text based on keyboard layout.</p>
+
+    <p><strong>Q:</strong> Is my data sent anywhere?<br>
+    <strong>A:</strong> No. Everything happens locally in your browser.</p>
+  </div>
+</body>
+</html>
