@@ -105,8 +105,8 @@
 <!-- תיבת בחירה לשפה -->
 <div style="text-align: center; margin-bottom: 20px;">
   <select onchange="changeLanguage(this.value)">
-    <option value="en" data-i18n="english">English</option>
-    <option value="he" data-i18n="hebrew">עברית</option>
+    <option value="en" data-i18n="dropdownbox.english">English</option>
+    <option value="he" data-i18n="dropdownbox.hebrew">עברית</option>
   </select>
 </div>
 
@@ -201,7 +201,7 @@ function changeLanguage(lang) {
 
 function updateDirection() {
   const rtlLanguages = ['he', 'ar'];
-  document.body.style.direction = rtlLanguages.includes(i18next.language) ? 'rtl' : 'ltr';
+  document.body.style.direction = rtlLanguages.includes(i18next.dropdownbox) ? 'rtl' : 'ltr';
 }
 
 </script>
