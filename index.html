@@ -194,10 +194,13 @@
   }
 
   // פונקציה שמחליפה שפה לפי בחירת המשתמש
-  function changeLanguage(lang) {
-    i18next.changeLanguage(lang, updateContent); // מחליף שפה ומעדכן תוכן
+ function changeLanguage(lang) {
+  i18next.changeLanguage(lang, function() { // מחליף שפה
+    updateContent();
     updateDirection();
-  }
+  });
+}
+
   function updateDirection() {
     const rtlLanguages = ['hebrew', 'arabic']; // שפות שדורשות RTL
     document.body.style.direction = rtlLanguages.includes(i18next.language) ? 'rtl' : 'ltr';
