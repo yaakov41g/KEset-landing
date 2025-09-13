@@ -185,26 +185,24 @@
       updateDirection();
     });
 
-  // פונקציה שמעדכנת את כל האלמנטים עם data-i18n לפי השפה
-  function updateContent() {
-    document.querySelectorAll('[data-i18n]').forEach(el => {
-      const key = el.getAttribute('data-i18n'); // לוקח את שם המפתח מהאלמנט
-      el.innerText = i18next.t(key);            // מחליף את הטקסט לפי התרגום
-    });
-  }
+function updateContent() {
+  document.querySelectorAll('[data-i18n]').forEach(el => {
+    const key = el.getAttribute('data-i18n');
+    el.textContent = i18next.t(key);
+  });
+}
 
-  // פונקציה שמחליפה שפה לפי בחירת המשתמש
- function changeLanguage(lang) {
-  i18next.changeLanguage(lang, function() { // מחליף שפה
+function changeLanguage(lang) {
+  i18next.changeLanguage(lang, function() {
     updateContent();
     updateDirection();
   });
 }
 
-  function updateDirection() {
-    const rtlLanguages = ['he', 'ar']; // שפות שדורשות RTL
-    document.body.style.direction = rtlLanguages.includes(i18next.language) ? 'rtl' : 'ltr';
-  }
+function updateDirection() {
+  const rtlLanguages = ['he', 'ar'];
+  document.body.style.direction = rtlLanguages.includes(i18next.language) ? 'rtl' : 'ltr';
+}
 
 </script>
 </body>
