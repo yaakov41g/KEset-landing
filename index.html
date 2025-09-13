@@ -130,6 +130,45 @@
   <h2>Need help?</h2>
   <p>If you have questions, feedback, or need support, feel free to contact me at  
   <a href="mailto:yaakov41g+keset@gmail.com">yaakov41g+keset@gmail.com</a></p>
+<!-- ספריות התרגום: i18next וה־backend לטעינת קבצים חיצוניים -->
+<script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
 
+<!-- ספריות התרגום: i18next וה־backend לטעינת קבצים חיצוניים -->
+<script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
+<script src="https://unpkg.com/i18next-http-backend@1.4.1/i18nextHttpBackend.min.js"></script>
+
+<!-- קוד ההפעלה של i18next -->
+<script>
+  // אתחול הספרייה עם תוסף backend שמאפשר טעינת קובצי JSON חיצוניים
+  i18next
+    .use(i18nextHttpBackend) // מחבר את מנוע הטעינה
+    .init({
+      lng: 'en',              // שפת ברירת מחדל (אפשר לשנות ל־'he' לעברית)
+      fallbackLng: 'en',      // אם יש בעיה בטעינה — השתמש באנגלית
+      debug: true,            // מציג הודעות בקונסול לצורך בדיקה (אפשר לשנות ל־false)
+      backend: {
+        // הנתיב לקובצי התרגום שלך ב־GitHub Pages
+        loadPath: 'https://yaakov41g.github.io/KEset-landing/locales/{{lng}}.json'
+        // {{lng}} מתחלף אוטומטית ל־'en', 'he' וכו'
+      }
+    }, function(err, t) {
+      // לאחר טעינה מוצלחת — עדכן את התוכן בדף
+      updateContent();
+    });
+
+  // פונקציה שמעדכנת את כל האלמנטים עם data-i18n לפי השפה
+  function updateContent() {
+    document.querySelectorAll('[data-i18n]').forEach(el => {
+      const key = el.getAttribute('data-i18n'); // לוקח את שם המפתח מהאלמנט
+      el.innerText = i18next.t(key);            // מחליף את הטקסט לפי התרגום
+    });
+  }
+
+  // פונקציה שמחליפה שפה לפי בחירת המשתמש
+  function changeLanguage(lang) {
+    i18next.changeLanguage(lang, updateContent); // מחליף שפה ומעדכן תוכן
+  }
+</script>
 </body>
 </html>
