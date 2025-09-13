@@ -1,0 +1,53 @@
+{
+  "nav": {
+    "download": "הורדה",
+    "how": "איך זה עובד",
+    "example": "דוגמה",
+    "video": "הדרכה",
+    "faq": "שאלות נפוצות"
+  },
+  "header": {
+    "title": "ברוך הבא ל־KEset",
+    "subtitle1": "תיקון הקלדה בג'יבריש באמצעות קיצור מקלדת.",
+    "subtitle2": "ההרחבה הזו עוזרת לך לתקן הקלדה בשפה הלא נכונה באופן מיידי.",
+    "download_button": "הורדה מ־Edge Add-ons"
+  },
+  "how": {
+    "title": "מה בעצם KEset עושה?",
+    "paragraph1": "קרה לך שהקלדת משהו וגילית שהמקלדת הייתה על השפה הלא נכונה?",
+    "paragraph2": "במקום למחוק ולהקליד מחדש, KEset מאפשרת לתקן את זה מיד באמצעות קיצור מקלדת."
+  },
+  "example": {
+    "title": "דוגמה:",
+    "typed": "הקלדת: יקךךם םרךג",
+    "intended": "אבל התכוונת ל: hello world",
+    "explanation": "KEset תתקן את זה בלחיצה אחת או קיצור מקלדת."
+  },
+  "languages": {
+    "title": "שפות נתמכות:",
+    "list": ["🇮🇱 עברית", "🇬🇧 אנגלית", "🇷🇺 רוסית", "🇬🇷 יוונית", "🇸🇦 ערבית"]
+  },
+  "limitations": {
+    "title": "מגבלות:",
+    "list": [
+      "עובד בצורה מיטבית על מקלדות Windows סטנדרטיות",
+      "לא נבדק על מחשבי Mac או מחשבים ניידים"
+    ]
+  },
+  "video": {
+    "title": "צפה בהדרכה",
+    "description": "ראה כיצד KEset פועלת בפועל:"
+  },
+  "faq": {
+    "title": "שאלות נפוצות",
+    "q1": "האם KEset משנה את שפת המערכת שלי?",
+    "a1": "לא. היא רק מתקנת את הטקסט שהוקלד לפי פריסת המקלדת.",
+    "q2": "האם הנתונים שלי נשלחים למקום כלשהו?",
+    "a2": "לא. הכל מתבצע מקומית בדפדפן שלך."
+  },
+  "contact": {
+    "title": "צריך עזרה?",
+    "description": "אם יש לך שאלות, הערות או צורך בתמיכה, אתה מוזמן לפנות אליי בכתובת",
+    "email": "yaakov41g+keset@gmail.com"
+  }
+}
