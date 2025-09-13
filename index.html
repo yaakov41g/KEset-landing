@@ -69,74 +69,64 @@
 </head>
 <body>
 
-  <nav>
-    <a href="#download">Download</a>
-    <a href="#how">How it works</a>
-    <a href="#example">Example</a>
-    <a href="#video">Tutorial</a>
-    <a href="#faq">FAQ</a>
-  </nav>
-    <div style="margin-top:30px;padding-top:0px;display:flex;">
-        <div style="margin: 0 auto; width: 33%;">
-            <img src="logo.png" alt="Image of this application" style="display: block; margin-left: auto; margin-right: auto;margin-bottom:0; width: 143px;height:91px;">
-        </div>
-    </div>
-  <!-- תיבת בחירה לשפה -->
-<div style="text-align: center; margin-top: 10px;">
-  <select onchange="changeLanguage(this.value)" style="padding: 6px 12px; font-size: 16px;">
-    <option value="en">English</option>
-    <option value="he">עברית</option>
-  </select>
+ <nav>
+  <a href="#download" data-i18n="nav.download">Download</a>
+  <a href="#how" data-i18n="nav.how">How it works</a>
+  <a href="#example" data-i18n="nav.example">Example</a>
+  <a href="#video" data-i18n="nav.video">Tutorial</a>
+  <a href="#faq" data-i18n="nav.faq">FAQ</a>
+</nav>
+
+<div class="container">
+  <h1 data-i18n="header.title">Welcome to KEset</h1>
+  <p data-i18n="header.subtitle1">Correcting gibberish typing with a shortcut.</p>
+  <p data-i18n="header.subtitle2">This extension helps you fix wrong-language typing instantly.</p>
+  <a id="download" class="button" href="https://microsoftedge.microsoft.com/addons/detail/keset-correcting-gibber/ddahpfaemgfcpjkcaeieidbigomonbhm" target="_blank" data-i18n="header.download_button">Download from Edge Add-ons</a>
+
+  <h2 id="how" data-i18n="how.title">What does KEset actually do?</h2>
+  <p data-i18n="how.paragraph1">Ever typed something and realized your keyboard was set to the wrong language?</p>
+  <p data-i18n="how.paragraph2">Instead of deleting and retyping, KEset lets you fix it instantly using a shortcut.</p>
+
+  <h3 id="example" data-i18n="example.title">Example:</h3>
+  <p><span data-i18n="example.typed">You typed: יקךךם םרךג</span></p>
+  <p><span data-i18n="example.intended">But you meant: hello world</span></p>
+  <p data-i18n="example.explanation">KEset will convert it back correctly with one click or shortcut.</p>
+
+  <h3 data-i18n="languages.title">Supported Languages:</h3>
+  <ul>
+    <li data-i18n="languages.list.0">🇮🇱 Hebrew</li>
+    <li data-i18n="languages.list.1">🇬🇧 English</li>
+    <li data-i18n="languages.list.2">🇷🇺 Russian</li>
+    <li data-i18n="languages.list.3">🇬🇷 Greek</li>
+    <li data-i18n="languages.list.4">🇸🇦 Arabic</li>
+  </ul>
+
+  <h3 data-i18n="limitations.title">Limitations:</h3>
+  <ul>
+    <li data-i18n="limitations.list.0">Works best on standard Windows keyboards</li>
+    <li data-i18n="limitations.list.1">Not tested on Mac or laptops</li>
+  </ul>
+
+  <h2 id="video" data-i18n="video.title">Watch the tutorial</h2>
+  <p data-i18n="video.description">See how KEset works in action:</p>
+  <iframe width="560" height="315" src="https://www.youtube.com/embed/jdMnI-fTKkc" title="KEset Tutorial" frameborder="0" allowfullscreen></iframe>
+
+  <h2 id="faq" data-i18n="faq.title">FAQ</h2>
+  <p>
+    <strong>Q:</strong> <span data-i18n="faq.q1">Does KEset change my system language?</span><br>
+    <strong>A:</strong> <span data-i18n="faq.a1">No. It only corrects the typed text based on keyboard layout.</span>
+  </p>
+  <p>
+    <strong>Q:</strong> <span data-i18n="faq.q2">Is my data sent anywhere?</span><br>
+    <strong>A:</strong> <span data-i18n="faq.a2">No. Everything happens locally in your browser.</span>
+  </p>
 </div>
 
-  <div class="container">
-    <h1>Welcome to KEset</h1>
-    <p>Correcting gibberish typing with a shortcut.</p>
-    <p>This extension helps you fix wrong-language typing instantly.</p>
-
-    <a id="download" class="button" href="https://microsoftedge.microsoft.com/addons/detail/keset-correcting-gibber/ddahpfaemgfcpjkcaeieidbigomonbhm" target="_blank">
-      Download from Edge Add-ons
-    </a>
-
-    <h2 id="how">What does KEset actually do?</h2>
-    <p>Ever typed something and realized your keyboard was set to the wrong language?</p>
-    <p>Instead of deleting and retyping, KEset lets you fix it instantly using a shortcut.</p>
-
-    <h3 id="example">Example:</h3>
-    <p>You typed: <strong>יקךךם םרךג</strong> (Hebrew letters)</p>
-    <p>But you meant: <strong>hello world</strong></p>
-    <p>KEset will convert it back correctly with one click or shortcut.</p>
-
-    <h3>Supported Languages:</h3>
-    <ul>
-      <li>🇮🇱 Hebrew</li>
-      <li>🇬🇧 English</li>
-      <li>🇷🇺 Russian</li>
-      <li>🇬🇷 Greek</li>
-      <li>🇸🇦 Arabic</li>
-    </ul>
-
-    <h3>Limitations:</h3>
-    <ul>
-      <li>Works best on standard Windows keyboards</li>
-      <li>Not tested on Mac or laptops</li>
-     </ul>
-
-    <h2 id="video">Watch the tutorial</h2>
-    <p>See how KEset works in action:</p>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/jdMnI-fTKkc" 
-    title="KEset Tutorial" frameborder="0" allowfullscreen></iframe>
-
-    <h2 id="faq">FAQ</h2>
-    <p><strong>Q:</strong> Does KEset change my system language?<br>
-    <strong>A:</strong> No. It only corrects the typed text based on keyboard layout.</p>
-
-    <p><strong>Q:</strong> Is my data sent anywhere?<br>
-    <strong>A:</strong> No. Everything happens locally in your browser.</p>
-  </div>
-  <h2>Need help?</h2>
-  <p>If you have questions, feedback, or need support, feel free to contact me at  
-  <a href="mailto:yaakov41g+keset@gmail.com">yaakov41g+keset@gmail.com</a></p>
+<h2 data-i18n="contact.title">Need help?</h2>
+<p>
+  <span data-i18n="contact.description">If you have questions, feedback, or need support, feel free to contact me at</span>
+  <a href="mailto:yaakov41g+keset@gmail.com" data-i18n="contact.email">yaakov41g+keset@gmail.com</a>
+</p>
 
 <!-- ספריות התרגום: i18next וה־backend לטעינת קבצים חיצוניים -->
 <script src="https://unpkg.com/i18next@21.6.14/dist/umd/i18next.min.js"></script>
