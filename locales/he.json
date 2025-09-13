@@ -6,6 +6,9 @@
     "video": "הדרכה",
     "faq": "שאלות נפוצות"
   },
+   "dropdownbox" {
+     "hebrew" "Hebrew"
+  },
   "header": {
     "title": "ברוך הבא ל־KEset",
     "subtitle1": "תיקון הקלדה בג'יבריש באמצעות קיצור מקלדת.",
