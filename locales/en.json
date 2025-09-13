@@ -6,6 +6,10 @@
     "video": "Tutorial",
     "faq": "FAQ"
   },
+  "dropdownbox" {
+    "english": English,
+    "hebrew" Hebrew
+  },
   "header": {
     "title": "Welcome to KEset",
     "subtitle1": "Correcting gibberish typing with a shortcut.",
