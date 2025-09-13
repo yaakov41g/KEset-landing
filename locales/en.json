@@ -7,8 +7,8 @@
     "faq": "FAQ"
   },
   "dropdownbox" {
-    "english": English,
-    "hebrew" Hebrew
+    "english": "English",
+    "hebrew" "Hebrew"
   },
   "header": {
     "title": "Welcome to KEset",
