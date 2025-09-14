@@ -99,7 +99,7 @@
   <div>
     <select onchange="changeLanguage(this.value)">
       <option value="en" data-i18n="dropdownbox.english">English</option>
-      <option value="he" data-i18n="dropdownbox.hebrew">עברית</option>
+      <option value="he">עברית</option>
     </select>
   </div>
 </nav>
@@ -207,6 +207,7 @@ function updateContent() {
 
 function changeLanguage(lang) {
   i18next.changeLanguage(lang, function() {
+    console.log('Selected language:', lang);
     updateContent();
     updateDirection();
   });
