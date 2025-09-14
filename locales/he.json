@@ -6,9 +6,11 @@
     "video": "הדרכה",
     "faq": "שאלות נפוצות"
   },
-   "dropdownbox": {
-     "hebrew": "עברית"
-  },
+ "dropdownbox": {
+  "hebrew": "עברית",
+  "english": "English"
+},
+
   "header": {
     "title": "ברוך הבא ל־KEset",
     "subtitle1": "תיקון הקלדה בג'יבריש באמצעות קיצור מקלדת.",
