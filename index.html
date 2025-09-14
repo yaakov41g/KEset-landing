@@ -198,8 +198,9 @@
       updateDirection();
     });
 
-function updateContent() {
+function updateContent(lang) {
   document.querySelectorAll('[data-i18n]').forEach(el => {
+    console.log('Selected language:', lang);
     const key = el.getAttribute('data-i18n');
     el.textContent = i18next.t(key);
   });
@@ -207,8 +208,8 @@ function updateContent() {
 
 function changeLanguage(lang) {
   i18next.changeLanguage(lang, function() {
-    console.log('Selected language:', lang);
-    updateContent();
+    
+    updateContent(lang);
     updateDirection();
   });
 }
