@@ -46,7 +46,9 @@
     "q1": "Does KEset change my system language?",
     "a1": "No. It only corrects the typed text.",
     "q2": "Is my data sent anywhere?",
-    "a2": "No. Everything happens locally in your browser."
+    "a2": "No. Everything happens locally in your browser.",
+    "q3": "Is there a limitation on Facebook and twiter/x?",
+    "a3": "Yes, for now, due to site restrictions. Click the Keset icon to get the corrected text from the popup."
   },
   "contact": {
     "title": "Need help?",
