@@ -14,7 +14,8 @@
     "title": "ברוכים הבאים ל־KEset",
     "subtitle1": "תיקון הקלדה בג'יבריש באמצעות קיצור מקלדת.",
     "subtitle2": "ההרחבה הזו עוזרת לך לתקן הקלדה בשפה הלא נכונה באופן מיידי.",
-    "download_button": "הורדה מ־Edge Add-ons"
+    "download_button": "הורדה מ־Edge Add-ons",
+    "download_button_chrome": "הורדה מ־Chrome Web Store"
   },
   "how": {
     "title": "מה בעצם KEset עושה?",
