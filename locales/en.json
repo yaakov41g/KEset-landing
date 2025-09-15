@@ -14,7 +14,7 @@
     "subtitle1": "Correcting gibberish typing with a shortcut.",
     "subtitle2": "This extension helps you fix wrong-language typing instantly.",
     "download_button": "Download from Edge Add-ons",
-    "download_button": "Download from Chrome Web Store"
+    "download_button_chrome": "Download from Chrome Web Store"
   },
   "how": {
     "title": "What does KEset actually do?",
