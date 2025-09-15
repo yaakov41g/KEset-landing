@@ -14,7 +14,7 @@
     "subtitle1": "Набрали абракадабру? KEset превратит её в смысл с помощью горячей клавиши.",
     "subtitle2": "Это расширение помогает мгновенно исправить текст, набранный не на том языке.",
     "download_button": "Скачать из Edge Add-ons",
-    "download_button": "Скачать из Chrome Web Store"
+    "download_button_chrome": "Скачать из Chrome Web Store"
   },
   "how": {
     "title": "Что делает KEset?",
